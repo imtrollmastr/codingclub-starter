@@ -18,7 +18,7 @@ async function getTopTracks(){
   )).items;
 }
 
-const topTracks = await getTopTracks();
+const topTracks = getTopTracks();
 console.log(
   topTracks?.map(
     ({name, artists}) =>
